@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: puppeteer-script
+    schedule: "*/15 * * * *"
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start
